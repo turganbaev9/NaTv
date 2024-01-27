@@ -1,5 +1,7 @@
 package kg.mega.na_tv.service.Impl;
 
+import kg.mega.na_tv.mapper.TextMapper;
+import kg.mega.na_tv.repository.TextRep;
 import kg.mega.na_tv.service.TextService;
 import lombok.RequiredArgsConstructor;
 import model.Text;
@@ -10,11 +12,16 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class TextServiceImpl implements TextService {
+    private  final TextRep textRep;
     @Override
     public TextDTO save(TextDTO textDTO) {
-        return null;
-    }
+        Text text= TextMapper.INSTANCE.toEntity(textDTO);
+        int symbolCount=textDTO.getText().replaceAll("[^a-zA-Zа-яА-Я]","").length();
+        text.setSymbolCount(symbolCount);
+        textRep.save(text);
 
+        return TextMapper.INSTANCE.toDTO(text);
+    }
     @Override
     public List<Text> findAll() {
         return null;
