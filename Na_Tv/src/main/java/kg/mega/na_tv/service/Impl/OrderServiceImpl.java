@@ -17,8 +17,9 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
-    private  final OrderRep orderRep;
+    private final OrderRep orderRep;
     private final PriceRep priceRep;
+
     @Override
     public OrderDTO save(OrderDTO orderDTO) {
         Order order = OrderMapper.INSTANCE.toEntity(orderDTO);
@@ -60,13 +61,13 @@ public class OrderServiceImpl implements OrderService {
         orderRep.save(order);
         return OrderMapper.INSTANCE.toDTO(order);
     }
-    @Override
-    public List<Order> findAll() {
-        return null;
+
+    public List<Order> searchOrders(String query) {
+        return orderRep.findByCreatedDateContainingOrFullNameClientContainingOrClientEmailContainingOrClientPhoneContaining(query);
     }
 
     @Override
-    public List<Order> searchOrders(String searchQuery) {
-        return null;
+    public List<Order> findAll() {
+        return orderRep.findAll();
     }
 }
