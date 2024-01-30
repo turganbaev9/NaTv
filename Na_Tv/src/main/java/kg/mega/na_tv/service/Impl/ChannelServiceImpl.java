@@ -24,7 +24,7 @@ public class ChannelServiceImpl implements ChannelService {
     }
 
     @Override
-    public ChannelDTO findBYId(Long id) {
+    public ChannelDTO findById(Long id) {
         return ChannelMapper.INSTANCE.toDTO(channelRep.findById(id).get());
     }
 

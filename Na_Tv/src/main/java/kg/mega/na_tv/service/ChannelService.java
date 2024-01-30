@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ChannelService {
     ChannelDTO save(ChannelDTO channelDTO);
-    ChannelDTO findBYId(Long id);
+    ChannelDTO findById(Long id);
     List<ChannelDTO> findAll();
 }
