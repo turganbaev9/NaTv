@@ -1,23 +1,15 @@
-package model;
+package kg.mega.na_tv.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.*;
-import lombok.experimental.FieldDefaults;
+import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.util.Date;
-@Entity
-@Table(name = "tb_discount")
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE)
 
-public class Discount {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@Data
+public class DiscountDTO {
     Long id;
     Double discount;
     @JsonProperty("start_date")
@@ -29,7 +21,5 @@ public class Discount {
     @JsonProperty("discount_days")
     Integer discountDays;
     @ManyToOne
-
     @JoinColumn(name = "channel_id")
-    Channel channel;
-}
+    ChannelDTO channel;}

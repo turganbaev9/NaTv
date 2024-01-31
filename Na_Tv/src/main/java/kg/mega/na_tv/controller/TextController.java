@@ -2,7 +2,7 @@ package kg.mega.na_tv.controller;
 
 import kg.mega.na_tv.service.TextService;
 import lombok.RequiredArgsConstructor;
-import model.dto.TextDTO;
+import kg.mega.na_tv.model.dto.TextDTO;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

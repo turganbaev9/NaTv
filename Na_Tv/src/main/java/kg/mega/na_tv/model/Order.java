@@ -1,12 +1,12 @@
-package model;
+package kg.mega.na_tv.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import kg.mega.na_tv.model.Enum.Status;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
-import model.Enum.Status;
 
 import javax.persistence.*;
 import java.util.Date;

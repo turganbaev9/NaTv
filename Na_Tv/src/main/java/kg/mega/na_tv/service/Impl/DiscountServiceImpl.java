@@ -5,9 +5,9 @@ import kg.mega.na_tv.repository.ChannelRep;
 import kg.mega.na_tv.repository.DiscountRep;
 import kg.mega.na_tv.service.DiscountService;
 import lombok.RequiredArgsConstructor;
-import model.Channel;
-import model.Discount;
-import model.dto.DiscountDTO;
+import kg.mega.na_tv.model.Channel;
+import kg.mega.na_tv.model.Discount;
+import kg.mega.na_tv.model.dto.DiscountDTO;
 import org.springframework.stereotype.Service;
 
 import java.time.temporal.ChronoUnit;

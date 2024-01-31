@@ -1,13 +1,23 @@
-package model.dto;
+package kg.mega.na_tv.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
+import lombok.*;
+import lombok.experimental.FieldDefaults;
 
+import javax.persistence.*;
 import java.util.Date;
 
-@Data
-public class ChannelDTO {
+@Entity
+@Setter
+@Getter
+@RequiredArgsConstructor
+@ToString
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@Table(name = "tb_channel")
+public class Channel {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
     Long id;
     @JsonProperty("channel_name")
     String channelName;
@@ -16,6 +26,4 @@ public class ChannelDTO {
     Date createdDate;
     @JsonProperty("channel_status")
     boolean channelStatus;
-
-
 }

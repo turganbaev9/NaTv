@@ -1,7 +1,7 @@
 package kg.mega.na_tv.mapper;
 
-import model.Discount;
-import model.dto.DiscountDTO;
+import kg.mega.na_tv.model.Discount;
+import kg.mega.na_tv.model.dto.DiscountDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

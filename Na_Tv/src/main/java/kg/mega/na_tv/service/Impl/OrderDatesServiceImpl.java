@@ -4,8 +4,8 @@ import kg.mega.na_tv.mapper.OrderDatesMapper;
 import kg.mega.na_tv.repository.OrderDatesRep;
 import kg.mega.na_tv.service.OrderDatesService;
 import lombok.RequiredArgsConstructor;
-import model.OrderDates;
-import model.dto.OrderDatesDTO;
+import kg.mega.na_tv.model.OrderDates;
+import kg.mega.na_tv.model.dto.OrderDatesDTO;
 import org.springframework.stereotype.Service;
 
 @Service

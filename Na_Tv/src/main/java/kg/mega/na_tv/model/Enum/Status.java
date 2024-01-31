@@ -1,4 +1,4 @@
-package model.Enum;
+package kg.mega.na_tv.model.Enum;
 
 public enum Status {
     Created,

@@ -1,6 +1,5 @@
-package model;
+package kg.mega.na_tv.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -8,19 +7,20 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name = "tb_text_add")
-@RequiredArgsConstructor
-@Setter
+@Table(name = "tb_order_dates")
 @Getter
+@Setter
+@RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Text {
+public class OrderDates {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    String text;
-    @JsonProperty("symbol_count")
-    Integer symbolCount;
-
+    Date days;
+    @ManyToOne
+    @JoinColumn(name = "order_id")
+    Order order;
 }

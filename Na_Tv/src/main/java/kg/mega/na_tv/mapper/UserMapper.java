@@ -1,7 +1,7 @@
 package kg.mega.na_tv.mapper;
 
-import model.User;
-import model.dto.UserDTO;
+import kg.mega.na_tv.model.User;
+import kg.mega.na_tv.model.dto.UserDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

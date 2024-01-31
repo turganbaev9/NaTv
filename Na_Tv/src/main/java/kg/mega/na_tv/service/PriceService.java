@@ -1,8 +1,7 @@
 package kg.mega.na_tv.service;
 
-import lombok.RequiredArgsConstructor;
-import model.Price;
-import model.dto.PriceDTO;
+import kg.mega.na_tv.model.Price;
+import kg.mega.na_tv.model.dto.PriceDTO;
 
 import java.util.List;
 

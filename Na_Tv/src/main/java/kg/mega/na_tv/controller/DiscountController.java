@@ -2,8 +2,8 @@ package kg.mega.na_tv.controller;
 
 import kg.mega.na_tv.service.DiscountService;
 import lombok.RequiredArgsConstructor;
-import model.Discount;
-import model.dto.DiscountDTO;
+import kg.mega.na_tv.model.Discount;
+import kg.mega.na_tv.model.dto.DiscountDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

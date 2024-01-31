@@ -4,8 +4,8 @@ import kg.mega.na_tv.mapper.ChannelMapper;
 import kg.mega.na_tv.repository.ChannelRep;
 import kg.mega.na_tv.service.ChannelService;
 import lombok.RequiredArgsConstructor;
-import model.Channel;
-import model.dto.ChannelDTO;
+import kg.mega.na_tv.model.Channel;
+import kg.mega.na_tv.model.dto.ChannelDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

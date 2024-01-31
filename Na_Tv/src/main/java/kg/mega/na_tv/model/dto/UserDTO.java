@@ -1,4 +1,4 @@
-package model.dto;
+package kg.mega.na_tv.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

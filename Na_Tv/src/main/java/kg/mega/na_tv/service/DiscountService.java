@@ -1,7 +1,7 @@
 package kg.mega.na_tv.service;
 
-import model.Discount;
-import model.dto.DiscountDTO;
+import kg.mega.na_tv.model.Discount;
+import kg.mega.na_tv.model.dto.DiscountDTO;
 
 import java.util.List;
 

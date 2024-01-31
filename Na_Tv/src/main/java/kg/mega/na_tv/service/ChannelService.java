@@ -1,6 +1,6 @@
 package kg.mega.na_tv.service;
 
-import model.dto.ChannelDTO;
+import kg.mega.na_tv.model.dto.ChannelDTO;
 
 import java.util.List;
 

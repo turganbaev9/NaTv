@@ -1,7 +1,7 @@
 package kg.mega.na_tv.service;
 
-import model.Order;
-import model.dto.OrderDTO;
+import kg.mega.na_tv.model.Order;
+import kg.mega.na_tv.model.dto.OrderDTO;
 
 import java.util.List;
 

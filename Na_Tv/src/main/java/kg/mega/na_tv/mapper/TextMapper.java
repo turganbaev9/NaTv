@@ -1,7 +1,7 @@
 package kg.mega.na_tv.mapper;
 
-import model.Text;
-import model.dto.TextDTO;
+import kg.mega.na_tv.model.Text;
+import kg.mega.na_tv.model.dto.TextDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

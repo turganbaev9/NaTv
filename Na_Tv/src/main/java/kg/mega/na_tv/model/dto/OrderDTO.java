@@ -1,11 +1,11 @@
-package model.dto;
+package kg.mega.na_tv.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import model.Enum.Status;
+import kg.mega.na_tv.model.Enum.Status;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;

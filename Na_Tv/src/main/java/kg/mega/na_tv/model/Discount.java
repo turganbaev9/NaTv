@@ -1,39 +1,35 @@
-package model;
+package kg.mega.na_tv.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.util.Date;
-
 @Entity
-@FieldDefaults(level = AccessLevel.PRIVATE)
+@Table(name = "tb_discount")
 @Getter
 @Setter
+@ToString
 @RequiredArgsConstructor
-@Table(name = "tb_price")
-public class Price {
+@FieldDefaults(level = AccessLevel.PRIVATE)
+
+public class Discount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-    @JsonProperty("price_per_simbol")
-    Double pricePerSimbol;
-    Double price;
+    Double discount;
     @JsonProperty("start_date")
     @JsonFormat(pattern = "dd.MM.yyyy")
     Date startDate;
     @JsonProperty("end_date")
     @JsonFormat(pattern = "dd.MM.yyyy")
     Date endDate;
+    @JsonProperty("discount_days")
+    Integer discountDays;
     @ManyToOne
-    @JoinColumn(name = "text")
-    Text text;
-    @ManyToOne
-    @JoinColumn(name = "discount")
-    Discount discount;
+
+    @JoinColumn(name = "channel_id")
+    Channel channel;
 }

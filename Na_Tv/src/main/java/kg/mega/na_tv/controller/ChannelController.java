@@ -2,7 +2,7 @@ package kg.mega.na_tv.controller;
 
 import kg.mega.na_tv.service.ChannelService;
 import lombok.RequiredArgsConstructor;
-import model.dto.ChannelDTO;
+import kg.mega.na_tv.model.dto.ChannelDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

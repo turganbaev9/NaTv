@@ -7,10 +7,10 @@ import kg.mega.na_tv.repository.TextRep;
 import kg.mega.na_tv.service.DiscountService;
 import kg.mega.na_tv.service.PriceService;
 import lombok.RequiredArgsConstructor;
-import model.Discount;
-import model.Price;
-import model.Text;
-import model.dto.PriceDTO;
+import kg.mega.na_tv.model.Discount;
+import kg.mega.na_tv.model.Price;
+import kg.mega.na_tv.model.Text;
+import kg.mega.na_tv.model.dto.PriceDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;

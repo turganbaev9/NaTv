@@ -1,7 +1,7 @@
 package kg.mega.na_tv.mapper;
 
-import model.Channel;
-import model.dto.ChannelDTO;
+import kg.mega.na_tv.model.Channel;
+import kg.mega.na_tv.model.dto.ChannelDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
